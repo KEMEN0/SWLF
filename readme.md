@@ -5,6 +5,9 @@ SWLF is a text-based social media platform that allows users to interact with ea
 
 ---
 
+![Alt text](<diagram + mockup + first mockup/sreenshot-swlf.png>)
+
+---
 
 ## Safety Guidelines
 
@@ -83,6 +86,10 @@ here is the diagram
 here is the our first mockup
 
 ![digram](<diagram + mockup + first mockup/untitled.png>)
+---
+this is our create post page
+
+![Alt text](<diagram + mockup + first mockup/Screenshot 1.png>)
 ---
 ## Use cases
 
