@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    justify-content: left;
+    align-items: center;
+    background-color: #393E41;
+    text-decoration: none;
+    padding: 16px 10px 16px 10px;
+    border-radius: 0px 0px 4px 4px;
+    border: 0.4px solid #323639;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+#arabic {
+    font-size: 20px;
+    color: #E2C044;
+    text-decoration: none;
+}
+
+#eng {
+    font-size: 37px;
+    color: #E2C044;
+    text-decoration: none;
+    font-weight: bolder;
+}

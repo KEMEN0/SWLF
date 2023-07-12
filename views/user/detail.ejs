@@ -1,0 +1,38 @@
+<div class="user-details">
+    <label>User Name:</label>
+    <%= user.userName %>
+
+    <label>Email:</label>
+    <%= user.emailAddress %>
+  </div>
+
+  <table>
+    <tr>
+        <th>Title</th>
+        <th>description</th>
+
+    </tr>
+    <% posts.forEach(function(post){ %>
+        <tr>
+            <td>
+                <a href="/post/detail?id=<%= post._id %>">
+                    <%= post.title %>
+                </a>
+            </td>
+            <td>
+                <%= post.description %>
+            </td>
+            <td>
+                <form method="POST" action="/post/delete?id=<%=post._id%>">
+                    <button type="submit">DELETE</button>
+                </form>
+                <a href="/post/edit?id=<%=post._id%>">UPDATE</a>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+
+
+<a href="/post/index" class="btn btn-primary">All Posts</a>
+
+<link rel="stylesheet" href="../css/user.css">

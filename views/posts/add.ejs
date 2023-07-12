@@ -1,0 +1,28 @@
+<h2 class="page-title-text">Simply click the parts you want to edit. It's that easy. &#128134;</h2>
+<h3 style="text-align: center; font-family: arial; padding: 10px">Dont forget to add your own emoji &#9975;</h3>
+
+
+<form method="POST" action="/post/add?id=<%= currentUser._id %>">
+<div class="product-card card" style="left: 35%;">
+  <div class="logo-cart">
+  <div>
+    <!-- <p class="emoji">insert emoji:</p> -->
+      <input minlength="1" maxlength="8"  id="emoji-corner" name="emoji" type="text" placeholder="&#128131;" required>
+  </div>
+  <input type="text" class="title-font" id="title-create" name="title" placeholder="TITLE">
+  </div>
+      <div class="main-images">
+                 <textarea name="description" class="post-view-description" placeholder="Here you can write whatever you want to share with the world &#127757; Ask anyhting youre curious to know more about and our community will get back to you." maxlength='1000' minlength='20'></textarea>
+
+                 <!-- // Input tag in case want to change the TextArea tag above! -->
+                 <!-- <input type="text" name="title" class="main-images"  style="width: 340px; "> -->
+      </div>
+      <div class="shoe-details">
+      <input type="text" id="hashtag-font" name="hashtags" class="shoe_name" placeholder="#LIT #WHATEVER #IN">
+      </div>
+</div>
+
+  <input type="submit" value="POST &#128131;" class="post-button input">
+</form>
+
+

@@ -1,0 +1,39 @@
+/*EVERYTHING NAVBAR*/
+
+.navbar {
+  top: 0px;
+  position: fixed;
+  width: 98.9%;
+  z-index: 1000;
+  background:#fff;
+}
+
+.right-side {
+  float: right;
+  font-size: 2.2rem
+}
+
+body {
+  width: 100%;
+}
+
+#navbar{
+    top: 0px;
+    position: relative;
+    width: 98.9%;
+    z-index: 1000;
+    background: #fff;
+}
+
+.right-side {
+    float: right;
+    font-size: 2.2rem
+}
+
+body {
+    width: 100%;
+}
+
+.up {
+  text-transform: uppercase;
+}

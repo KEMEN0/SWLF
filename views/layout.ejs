@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWLFسوالف</title>
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/join.css">
+    <link rel="stylesheet" href="/css/add.css"
+    <link rel="stylesheet" href="../css/user.css">
+
+    <script src="footer.js" defer></script>
+    <script src="randomemoji.js" defer></script>
+    <header>
+
+      <div class="navbar" id="navbar">
+        <a style="font-size: 2.7rem" href="/">سوالف</a>
+        <a style="font-size: 2.7rem" href="/">SWLF 🎙</a>
+
+
+        <% if (currentUser) {%>
+            <a class="right-side" href="/auth/logout">LOG OUT &#128242;</a>
+            <a class="right-side" href="/post/add">CREATE POST &#128242;</a>
+            <a class="right-side up" style href="/user/detail?id=<%= currentUser._id %>"><%= currentUser.userName %> &#128587;</a>
+        <% } else {%>
+            <a class="right-side" href="/auth/login">LOG IN &#127849;</a>
+            <a class="right-side" href="/post/add">CREATE POST &#128242;</a>
+            <a class="right-side" href="/auth/join">JOIN &#128242;</a>
+        <% } %>
+      </div>
+    </header>
+</head>
+
+<body>
+    <%- body %>
+</body>
+
+
+<footer>
+<!--     <div class="footer" id="footer">
+        <div class="wrapper">
+            <a id="arabic" style="font-size: 1.7rem" onclick="toggle()">بالعربي</a>
+            <a id="english" onclick="eng()">ENGLISH</a>
+            <a href="default.asp">GO BACK TO HOMEPAGE &#128091;</a>
+            <a href="news.asp">OR LEARN MORE ABOUT US. &#127849;</a>
+            <p class="wrapper uppercase" id="toggle"> WE LOVE YOU. But we love asking questions too. SWLF is a space to openly ask anything on the internet, so why not ask? We're easy to use, privacy focused, and we do our best to contribute to the planet with lots of love. &#128151;</p>
+        </div>
+    </div> -->
+</footer>
+
+</html>

@@ -1,0 +1,69 @@
+<head>
+
+    <script src="/footer.js" defer></script>
+    <!-- <script src="/randomemoji.js" defer></script> -->
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+<!--   <div class="navbar" id="navbar">
+        <a style="font-size: 2.7rem">سوالف</a>
+        <a style="font-size: 2.7rem">SWLF 🎙</a>
+        <a class="right-side" href="auth/login">LOG IN &#127849;</a>
+        <a class="right-side" href="contact.asp">CREATE POST &#128242;</a>
+        <a class="right-side" href="contact.asp">LOG OUT &#128242;</a>
+  </div> -->
+
+
+<!-- BODY HERE -->
+<div class="wrapper">
+
+<!-- <div id="row" style="display: grid; display: inline-grid; width: 90%; row-gap: 100px; column-gap: 100px">
+   <div id="innerContent" class="columns">
+
+
+
+   </div>
+</div> -->
+
+<div class="row">
+   <div id="innerContent" class="columns">
+              <% posts.forEach(post => { %>
+                    <div class="product-card card">
+                        <div class="logo-cart">
+                            <p><%= post.emoji %></p>
+                            <h1>
+                                <%= post.title %>
+                            </h1>
+                        </div>
+                        <div class="main-images">
+                            <%= post.description %>
+                        </div>
+                        <div class="shoe-details">
+                            <span class="shoe_name">#LIT #WHATEVER #IN</span>
+                        </div>
+                    </div>
+            <%})%>
+
+   </div>
+</div>
+</div>
+
+</body>
+
+<footer>
+    <div class="footer" id="footer">
+    <div class="wrapper">
+        <a id="arabic" style="font-size: 1.7rem" onclick="toggle()">بالعربي</a>
+        <a id="english" onclick="eng()">ENGLISH</a>
+        <a href="default.asp">GO BACK TO HOMEPAGE &#128091;</a>
+        <a href="news.asp">OR LEARN MORE ABOUT US. &#127849;</a>
+        <p class="wrapper uppercase" id="toggle"> WE LOVE YOU. But we love asking questions too. SWLF is a space to openly ask anything on the internet, so why not ask? We're easy to use, privacy focused, and we do our best to contribute to the planet with lots of love. &#128151;</p>
+    </div>
+    </div>
+</footer>
+    </div>
+    <div id="space1"></div>
+</body>
